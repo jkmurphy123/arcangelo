@@ -1,0 +1,268 @@
+[
+  {
+    "t_on": 0.0,
+    "t_off": 20.0,
+    "pitch": 60,
+    "vel": 44,
+    "channel": 0
+  },
+  {
+    "t_on": 0.0,
+    "t_off": 20.0,
+    "pitch": 64,
+    "vel": 18,
+    "channel": 0
+  },
+  {
+    "t_on": 20.0,
+    "t_off": 40.0,
+    "pitch": 60,
+    "vel": 24,
+    "channel": 0
+  },
+  {
+    "t_on": 20.0,
+    "t_off": 40.0,
+    "pitch": 64,
+    "vel": 33,
+    "channel": 0
+  },
+  {
+    "t_on": 40.0,
+    "t_off": 60.0,
+    "pitch": 60,
+    "vel": 47,
+    "channel": 0
+  },
+  {
+    "t_on": 40.0,
+    "t_off": 60.0,
+    "pitch": 64,
+    "vel": 25,
+    "channel": 0
+  },
+  {
+    "t_on": 60.0,
+    "t_off": 80.0,
+    "pitch": 60,
+    "vel": 50,
+    "channel": 0
+  },
+  {
+    "t_on": 60.0,
+    "t_off": 80.0,
+    "pitch": 64,
+    "vel": 50,
+    "channel": 0
+  },
+  {
+    "t_on": 80.0,
+    "t_off": 100.0,
+    "pitch": 60,
+    "vel": 19,
+    "channel": 0
+  },
+  {
+    "t_on": 80.0,
+    "t_off": 100.0,
+    "pitch": 64,
+    "vel": 34,
+    "channel": 0
+  },
+  {
+    "t_on": 100.0,
+    "t_off": 120.0,
+    "pitch": 60,
+    "vel": 21,
+    "channel": 0
+  },
+  {
+    "t_on": 100.0,
+    "t_off": 120.0,
+    "pitch": 64,
+    "vel": 36,
+    "channel": 0
+  },
+  {
+    "t_on": 120.0,
+    "t_off": 140.0,
+    "pitch": 60,
+    "vel": 47,
+    "channel": 0
+  },
+  {
+    "t_on": 120.0,
+    "t_off": 140.0,
+    "pitch": 64,
+    "vel": 30,
+    "channel": 0
+  },
+  {
+    "t_on": 140.0,
+    "t_off": 150.0,
+    "pitch": 60,
+    "vel": 60,
+    "channel": 0
+  },
+  {
+    "t_on": 140.0,
+    "t_off": 150.0,
+    "pitch": 64,
+    "vel": 31,
+    "channel": 0
+  },
+  {
+    "t_on": 150.0,
+    "t_off": 170.0,
+    "pitch": 60,
+    "vel": 18,
+    "channel": 0
+  },
+  {
+    "t_on": 150.0,
+    "t_off": 170.0,
+    "pitch": 64,
+    "vel": 31,
+    "channel": 0
+  },
+  {
+    "t_on": 170.0,
+    "t_off": 190.0,
+    "pitch": 60,
+    "vel": 35,
+    "channel": 0
+  },
+  {
+    "t_on": 170.0,
+    "t_off": 190.0,
+    "pitch": 64,
+    "vel": 41,
+    "channel": 0
+  },
+  {
+    "t_on": 190.0,
+    "t_off": 210.0,
+    "pitch": 60,
+    "vel": 22,
+    "channel": 0
+  },
+  {
+    "t_on": 190.0,
+    "t_off": 210.0,
+    "pitch": 64,
+    "vel": 38,
+    "channel": 0
+  },
+  {
+    "t_on": 210.0,
+    "t_off": 230.0,
+    "pitch": 60,
+    "vel": 32,
+    "channel": 0
+  },
+  {
+    "t_on": 210.0,
+    "t_off": 230.0,
+    "pitch": 64,
+    "vel": 51,
+    "channel": 0
+  },
+  {
+    "t_on": 230.0,
+    "t_off": 250.0,
+    "pitch": 60,
+    "vel": 22,
+    "channel": 0
+  },
+  {
+    "t_on": 230.0,
+    "t_off": 250.0,
+    "pitch": 64,
+    "vel": 44,
+    "channel": 0
+  },
+  {
+    "t_on": 250.0,
+    "t_off": 270.0,
+    "pitch": 60,
+    "vel": 28,
+    "channel": 0
+  },
+  {
+    "t_on": 250.0,
+    "t_off": 270.0,
+    "pitch": 64,
+    "vel": 38,
+    "channel": 0
+  },
+  {
+    "t_on": 270.0,
+    "t_off": 290.0,
+    "pitch": 60,
+    "vel": 39,
+    "channel": 0
+  },
+  {
+    "t_on": 270.0,
+    "t_off": 290.0,
+    "pitch": 64,
+    "vel": 50,
+    "channel": 0
+  },
+  {
+    "t_on": 290.0,
+    "t_off": 300.0,
+    "pitch": 60,
+    "vel": 62,
+    "channel": 0
+  },
+  {
+    "t_on": 290.0,
+    "t_off": 300.0,
+    "pitch": 64,
+    "vel": 63,
+    "channel": 0
+  },
+  {
+    "t_on": 300.0,
+    "t_off": 320.0,
+    "pitch": 60,
+    "vel": 44,
+    "channel": 0
+  },
+  {
+    "t_on": 300.0,
+    "t_off": 320.0,
+    "pitch": 64,
+    "vel": 35,
+    "channel": 0
+  },
+  {
+    "t_on": 320.0,
+    "t_off": 340.0,
+    "pitch": 60,
+    "vel": 44,
+    "channel": 0
+  },
+  {
+    "t_on": 320.0,
+    "t_off": 340.0,
+    "pitch": 64,
+    "vel": 51,
+    "channel": 0
+  },
+  {
+    "t_on": 340.0,
+    "t_off": 360.0,
+    "pitch": 60,
+    "vel": 47,
+    "channel": 0
+  },
+  {
+    "t_on": 340.0,
+    "t_off": 360.0,
+    "pitch": 64,
+    "vel": 32,
+    "channel": 0
+  }
+]

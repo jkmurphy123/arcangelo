@@ -222,6 +222,9 @@ def ollama_chat(model: str, messages: List[Dict[str, str]], host: str = "http://
     r = requests.post(url, json=payload, timeout=360)
     r.raise_for_status()
     data = r.json()
+    #print("---------------------------------------------------------------------------")
+    #print(data["message"]["content"])
+    #print("---------------------------------------------------------------------------")
     return data["message"]["content"]
 
 

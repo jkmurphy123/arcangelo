@@ -1,0 +1,802 @@
+{
+  "id": "track_01",
+  "label": "Track 1",
+  "length_s": 320,
+  "tempo_bpm": 90,
+  "key_signature": "C Major",
+  "time_signature": "4/4",
+  "events": [
+    {
+      "id": "m1",
+      "label": "Intro",
+      "start_s": 0,
+      "duration_s": 60,
+      "beat_words": [
+        "X X | X X | X X | X X"
+      ],
+      "energy": {
+        "tension": "low",
+        "density": "medium",
+        "brightness": "low"
+      },
+      "harmony": {
+        "tonal_center": "C",
+        "scale": "major",
+        "degree_pool": [
+          0, 2, 4, 5, 7, 9, 11
+        ],
+        "change_points_pct": [
+          0,
+          25
+        ]
+      },
+      "layers": {
+        "drone": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": -3,
+            "fade_in_s": 1,
+            "fade_out_s": 1,
+            "pan": 0
+          },
+          "gen": {
+            "type": "drone",
+            "notes": [
+              60, 64
+            ],
+            "hold_s": [
+              20, 20
+            ],
+            "voicing": {
+              "voices": 2,
+              "spread_semitones": 5
+            },
+            "drift_cents": 50
+          },
+          "automation": {
+            "gain_db": [
+              [0, -3],
+              [60, -1]
+            ]
+          },
+          "notes_for_humans": [
+            "C4", "E4"
+          ]
+        },
+        "motif": {
+          "state": "on",
+          "foreground": false,
+          "mix": {
+            "gain_db": 0,
+            "fade_in_s": 1,
+            "fade_out_s": 1,
+            "pan": -2
+          },
+          "gen": {
+            "type": "motif_loop",
+            "grid": "1/8",
+            "motif_steps": 4,
+            "pattern_degrees": [
+              0, 2, 4, 6
+            ],
+            "octave": 3,
+            "rate_hz": 0.5,
+            "repeat_cycle": {
+              "length": 4,
+              "variant_on": []
+            },
+            "variant": {
+              "mode": "none",
+              "substitute_steps": [],
+              "degree_pool": []
+            },
+            "gate": {
+              "note_len": "1/8",
+              "swing": 0
+            },
+            "velocity": {
+              "min": 64,
+              "max": 96
+            }
+          },
+          "automation": {
+            "gain_db": [
+              [0, 0],
+              [30, -2]
+            ]
+          },
+          "notes_for_humans": [
+            "C5", "E5", "G5", "B5"
+          ]
+        },
+        "lead": {
+          "state": "off",
+          "foreground": false,
+          "mix": {},
+          "gen": {},
+          "automation": {}
+        },
+        "texture": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": -1,
+            "fade_in_s": 0.5,
+            "fade_out_s": 0.5,
+            "pan": 2
+          },
+          "gen": {
+            "type": "texture",
+            "event_rate_per_min": [
+              30, 40
+            ],
+            "dur_s": [
+              0.1, 0.2
+            ],
+            "register": 5,
+            "degree_pool": [
+              60, 62, 64, 67, 69, 71
+            ]
+          },
+          "automation": {
+            "gain_db": [
+              [0, -1],
+              [60, 0]
+            ]
+          }
+        },
+        "field": {
+          "state": "off",
+          "foreground": false,
+          "mix": {},
+          "gen": {},
+          "automation": {}
+        }
+      }
+    },
+    {
+      "id": "m2",
+      "label": "Verse 1",
+      "start_s": 60,
+      "duration_s": 90,
+      "beat_words": [
+        "X X | X X | X X | X X"
+      ],
+      "energy": {
+        "tension": "medium",
+        "density": "high",
+        "brightness": "medium"
+      },
+      "harmony": {
+        "tonal_center": "C",
+        "scale": "major",
+        "degree_pool": [
+          0, 2, 4, 5, 7, 9, 11
+        ],
+        "change_points_pct": [
+          0,
+          25,
+          50
+        ]
+      },
+      "layers": {
+        "drone": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": -3,
+            "fade_in_s": 1,
+            "fade_out_s": 1,
+            "pan": 0
+          },
+          "gen": {
+            "type": "drone",
+            "notes": [
+              60, 64
+            ],
+            "hold_s": [
+              20, 20
+            ],
+            "voicing": {
+              "voices": 2,
+              "spread_semitones": 5
+            },
+            "drift_cents": 50
+          },
+          "automation": {
+            "gain_db": [
+              [0, -3],
+              [60, -1]
+            ]
+          },
+          "notes_for_humans": [
+            "C4", "E4"
+          ]
+        },
+        "motif": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": 0,
+            "fade_in_s": 1,
+            "fade_out_s": 1,
+            "pan": -2
+          },
+          "gen": {
+            "type": "motif_loop",
+            "grid": "1/8",
+            "motif_steps": 4,
+            "pattern_degrees": [
+              0, 2, 4, 6
+            ],
+            "octave": 3,
+            "rate_hz": 0.5,
+            "repeat_cycle": {
+              "length": 4,
+              "variant_on": []
+            },
+            "variant": {
+              "mode": "none",
+              "substitute_steps": [],
+              "degree_pool": []
+            },
+            "gate": {
+              "note_len": "1/8",
+              "swing": 0
+            },
+            "velocity": {
+              "min": 64,
+              "max": 96
+            }
+          },
+          "automation": {
+            "gain_db": [
+              [0, 0],
+              [30, -2]
+            ]
+          },
+          "notes_for_humans": [
+            "C5", "E5", "G5", "B5"
+          ]
+        },
+        "lead": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": 3,
+            "fade_in_s": 1,
+            "fade_out_s": 1,
+            "pan": 0
+          },
+          "gen": {
+            "type": "wander",
+            "density_notes_per_min": [
+              120, 150
+            ],
+            "phrase_s": [
+              4, 8
+            ],
+            "range_semitones": 12,
+            "step_bias": 0.7,
+            "tendency": "up",
+            "rests_prob": 0.1,
+            "degree_pool": [
+              60, 62, 64, 67, 69, 71
+            ]
+          },
+          "automation": {
+            "gain_db": [
+              [0, 3],
+              [30, 5]
+            ]
+          },
+          "notes_for_humans": [
+            "C5", "E5", "G5", "B5"
+          ]
+        },
+        "texture": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": -1,
+            "fade_in_s": 0.5,
+            "fade_out_s": 0.5,
+            "pan": 2
+          },
+          "gen": {
+            "type": "texture",
+            "event_rate_per_min": [
+              30, 40
+            ],
+            "dur_s": [
+              0.1, 0.2
+            ],
+            "register": 5,
+            "degree_pool": [
+              60, 62, 64, 67, 69, 71
+            ]
+          },
+          "automation": {
+            "gain_db": [
+              [0, -1],
+              [60, 0]
+            ]
+          }
+        },
+        "field": {
+          "state": "off",
+          "foreground": false,
+          "mix": {},
+          "gen": {},
+          "automation": {}
+        }
+      }
+    },
+    {
+      "id": "m3",
+      "label": "Chorus",
+      "start_s": 150,
+      "duration_s": 60,
+      "beat_words": [
+        "X X | X X | X X | X X"
+      ],
+      "energy": {
+        "tension": "high",
+        "density": "very high",
+        "brightness": "high"
+      },
+      "harmony": {
+        "tonal_center": "C",
+        "scale": "major",
+        "degree_pool": [
+          0, 2, 4, 5, 7, 9, 11
+        ],
+        "change_points_pct": []
+      },
+      "layers": {
+        "drone": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": -3,
+            "fade_in_s": 1,
+            "fade_out_s": 1,
+            "pan": 0
+          },
+          "gen": {
+            "type": "drone",
+            "notes": [
+              60, 64
+            ],
+            "hold_s": [
+              20, 20
+            ],
+            "voicing": {
+              "voices": 2,
+              "spread_semitones": 5
+            },
+            "drift_cents": 50
+          },
+          "automation": {
+            "gain_db": [
+              [0, -3],
+              [60, -1]
+            ]
+          },
+          "notes_for_humans": [
+            "C4", "E4"
+          ]
+        },
+        "motif": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": 0,
+            "fade_in_s": 1,
+            "fade_out_s": 1,
+            "pan": -2
+          },
+          "gen": {
+            "type": "motif_loop",
+            "grid": "1/8",
+            "motif_steps": 4,
+            "pattern_degrees": [
+              0, 2, 4, 6
+            ],
+            "octave": 3,
+            "rate_hz": 0.5,
+            "repeat_cycle": {
+              "length": 4,
+              "variant_on": []
+            },
+            "variant": {
+              "mode": "none",
+              "substitute_steps": [],
+              "degree_pool": []
+            },
+            "gate": {
+              "note_len": "1/8",
+              "swing": 0
+            },
+            "velocity": {
+              "min": 64,
+              "max": 96
+            }
+          },
+          "automation": {
+            "gain_db": [
+              [0, 0],
+              [30, -2]
+            ]
+          },
+          "notes_for_humans": [
+            "C5", "E5", "G5", "B5"
+          ]
+        },
+        "lead": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": 3,
+            "fade_in_s": 1,
+            "fade_out_s": 1,
+            "pan": 0
+          },
+          "gen": {
+            "type": "wander",
+            "density_notes_per_min": [
+              240, 300
+            ],
+            "phrase_s": [
+              4, 8
+            ],
+            "range_semitones": 12,
+            "step_bias": 0.7,
+            "tendency": "up",
+            "rests_prob": 0.1,
+            "degree_pool": [
+              60, 62, 64, 67, 69, 71
+            ]
+          },
+          "automation": {
+            "gain_db": [
+              [0, 3],
+              [30, 5]
+            ]
+          },
+          "notes_for_humans": [
+            "C5", "E5", "G5", "B5"
+          ]
+        },
+        "texture": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": -1,
+            "fade_in_s": 0.5,
+            "fade_out_s": 0.5,
+            "pan": 2
+          },
+          "gen": {
+            "type": "texture",
+            "event_rate_per_min": [
+              60, 80
+            ],
+            "dur_s": [
+              0.1, 0.2
+            ],
+            "register": 5,
+            "degree_pool": [
+              60, 62, 64, 67, 69, 71
+            ]
+          },
+          "automation": {
+            "gain_db": [
+              [0, -1],
+              [60, 0]
+            ]
+          }
+        },
+        "field": {
+          "state": "off",
+          "foreground": false,
+          "mix": {},
+          "gen": {},
+          "automation": {}
+        }
+      }
+    },
+    {
+      "id": "m4",
+      "label": "Verse 2",
+      "start_s": 210,
+      "duration_s": 90,
+      "beat_words": [
+        "X X | X X | X X | X X"
+      ],
+      "energy": {
+        "tension": "medium",
+        "density": "high",
+        "brightness": "medium"
+      },
+      "harmony": {
+        "tonal_center": "C",
+        "scale": "major",
+        "degree_pool": [
+          0, 2, 4, 5, 7, 9, 11
+        ],
+        "change_points_pct": [
+          0,
+          25,
+          50
+        ]
+      },
+      "layers": {
+        "drone": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": -3,
+            "fade_in_s": 1,
+            "fade_out_s": 1,
+            "pan": 0
+          },
+          "gen": {
+            "type": "drone",
+            "notes": [
+              60, 64
+            ],
+            "hold_s": [
+              20, 20
+            ],
+            "voicing": {
+              "voices": 2,
+              "spread_semitones": 5
+            },
+            "drift_cents": 50
+          },
+          "automation": {
+            "gain_db": [
+              [0, -3],
+              [60, -1]
+            ]
+          },
+          "notes_for_humans": [
+            "C4", "E4"
+          ]
+        },
+        "motif": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": 0,
+            "fade_in_s": 1,
+            "fade_out_s": 1,
+            "pan": -2
+          },
+          "gen": {
+            "type": "motif_loop",
+            "grid": "1/8",
+            "motif_steps": 4,
+            "pattern_degrees": [
+              0, 2, 4, 6
+            ],
+            "octave": 3,
+            "rate_hz": 0.5,
+            "repeat_cycle": {
+              "length": 4,
+              "variant_on": []
+            },
+            "variant": {
+              "mode": "none",
+              "substitute_steps": [],
+              "degree_pool": []
+            },
+            "gate": {
+              "note_len": "1/8",
+              "swing": 0
+            },
+            "velocity": {
+              "min": 64,
+              "max": 96
+            }
+          },
+          "automation": {
+            "gain_db": [
+              [0, 0],
+              [30, -2]
+            ]
+          },
+          "notes_for_humans": [
+            "C5", "E5", "G5", "B5"
+          ]
+        },
+        "lead": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": 3,
+            "fade_in_s": 1,
+            "fade_out_s": 1,
+            "pan": 0
+          },
+          "gen": {
+            "type": "wander",
+            "density_notes_per_min": [
+              120, 150
+            ],
+            "phrase_s": [
+              4, 8
+            ],
+            "range_semitones": 12,
+            "step_bias": 0.7,
+            "tendency": "up",
+            "rests_prob": 0.1,
+            "degree_pool": [
+              60, 62, 64, 67, 69, 71
+            ]
+          },
+          "automation": {
+            "gain_db": [
+              [0, 3],
+              [30, 5]
+            ]
+          },
+          "notes_for_humans": [
+            "C5", "E5", "G5", "B5"
+          ]
+        },
+        "texture": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": -1,
+            "fade_in_s": 0.5,
+            "fade_out_s": 0.5,
+            "pan": 2
+          },
+          "gen": {
+            "type": "texture",
+            "event_rate_per_min": [
+              60, 80
+            ],
+            "dur_s": [
+              0.1, 0.2
+            ],
+            "register": 5,
+            "degree_pool": [
+              60, 62, 64, 67, 69, 71
+            ]
+          },
+          "automation": {
+            "gain_db": [
+              [0, -1],
+              [60, 0]
+            ]
+          }
+        },
+        "field": {
+          "state": "off",
+          "foreground": false,
+          "mix": {},
+          "gen": {},
+          "automation": {}
+        }
+      }
+    },
+    {
+      "id": "m5",
+      "label": "Outro",
+      "start_s": 300,
+      "duration_s": 60,
+      "beat_words": [
+        "X X | X X | X X | X X"
+      ],
+      "energy": {
+        "tension": "low",
+        "density": "medium",
+        "brightness": "low"
+      },
+      "harmony": {
+        "tonal_center": "C",
+        "scale": "major",
+        "degree_pool": [
+          0, 2, 4, 5, 7, 9, 11
+        ],
+        "change_points_pct": []
+      },
+      "layers": {
+        "drone": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": -3,
+            "fade_in_s": 1,
+            "fade_out_s": 1,
+            "pan": 0
+          },
+          "gen": {
+            "type": "drone",
+            "notes": [
+              60, 64
+            ],
+            "hold_s": [
+              20, 20
+            ],
+            "voicing": {
+              "voices": 2,
+              "spread_semitones": 5
+            },
+            "drift_cents": 50
+          },
+          "automation": {
+            "gain_db": [
+              [0, -3],
+              [60, -1]
+            ]
+          },
+          "notes_for_humans": [
+            "C4", "E4"
+          ]
+        },
+        "motif": {
+          "state": "off",
+          "foreground": false,
+          "mix": {},
+          "gen": {},
+          "automation": {}
+        },
+        "lead": {
+          "state": "on",
+          "foreground": true,
+          "mix": {
+            "gain_db": 2,
+            "fade_in_s": 1,
+            "fade_out_s": 1,
+            "pan": 0
+          },
+          "gen": {
+            "type": "wander",
+            "density_notes_per_min": [
+              60, 80
+            ],
+            "phrase_s": [
+              4, 8
+            ],
+            "range_semitones": 12,
+            "step_bias": 0.5,
+            "tendency": "down",
+            "rests_prob": 0.2,
+            "degree_pool": [
+              60, 62, 64, 67, 69, 71
+            ]
+          },
+          "automation": {
+            "gain_db": [
+              [0, 2],
+              [30, 0]
+            ]
+          },
+          "notes_for_humans": [
+            "C5", "E5", "G5", "B5"
+          ]
+        },
+        "texture": {
+          "state": "off",
+          "foreground": false,
+          "mix": {},
+          "gen": {},
+          "automation": {}
+        },
+        "field": {
+          "state": "off",
+          "foreground": false,
+          "mix": {},
+          "gen": {},
+          "automation": {}
+        }
+      }
+    }
+  ]
+}

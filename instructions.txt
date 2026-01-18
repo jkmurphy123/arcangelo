@@ -10,8 +10,27 @@ cd arcangelo
 
 ollama run qwen2.5-coder:7b-instruct
 
-# run generator
+# run composer
 python compose_plan.py --prompt "sunset over a ruined city" --movements 4 --duration 420 --model qwen2.5-coder:7b-instruct --out ruins_plan.json
+
+dawn chasing away a terrible night
+
+#run the midi generator, use --separate to put each track in a separate midi file
+
+python perform_plan_v0.py \
+  --plan schemas/dawn_plan.json \
+  --out out/hope/song.mid \
+  --separate \
+  --ppq 480 \
+  --channels drone=1,motif=2,lead=3,texture=4,field=5 \
+  --profile profiles/lmms_default.json \
+  --debug out/debug
+
+python perform_plan_v0.py --plan generated1.json --out song.mid --separate --debug debug_out
+
+python perform_plan_v0.py --plan generated1.json --out out/song.mid --separate --debug out/debug --enforce_cycle_variant
+
+python perform_plan_v0.py --plan schemas/dawn_plan.json --out out/hope/song.mid --separate --enforce_cycle_variant
 
 
 todo
