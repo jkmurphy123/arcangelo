@@ -1,0 +1,20 @@
+#setup
+python -m venv midi_env
+
+#run
+cd G:\AIProjects\AIMusic
+midi_env\Scripts\activate
+cd arcangelo
+
+# start llm in separate cmd
+
+ollama run qwen2.5-coder:7b-instruct
+
+# run generator
+python compose_plan.py --prompt "sunset over a ruined city" --movements 4 --duration 420 --model qwen2.5-coder:7b-instruct --out ruins_plan.json
+
+
+todo
+
+active codex
+get codex to add error trapping when ollama not running

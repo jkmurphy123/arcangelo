@@ -1,0 +1,242 @@
+{
+  "schema": "aimusic.ambient_storyboard.v1",
+  "meta": {
+    "title": "Sunset Over Ruins",
+    "seed": 184229,
+    "source_prompt": "sunset over a ruined city",
+    "created_utc": "2026-01-18T00:00:00Z"
+  },
+
+  "global": {
+    "duration_s": 420,
+    "bpm": 60,
+    "meter": "4/4",
+    "tonal_center": "D",
+    "scale": "dorian",
+    "humanize": {
+      "timing_ms": 18,
+      "velocity_jitter": 6
+    }
+  },
+
+  "layers": [
+    { "id": "drone",   "role": "drone" },
+    { "id": "motif",   "role": "motif_loop" },
+    { "id": "lead",    "role": "lead_wander" },
+    { "id": "texture", "role": "texture" },
+    { "id": "field",   "role": "field_recording" }
+  ],
+
+  "movements": [
+    {
+      "id": "m1_horizon",
+      "label": "Horizon Glow",
+      "duration_s": 90,
+      "beat_words": ["orientation", "awe", "stillness"],
+      "energy": { "tension": 0.2, "density": 0.25, "brightness": 0.7 },
+
+      "layers": {
+        "drone": {
+          "state": "on",
+          "foreground": 0.7,
+          "mix": { "gain_db": -12, "fade_in_s": 12, "fade_out_s": 8, "pan": 0.0 },
+          "gen": {
+            "type": "drone",
+            "notes": ["D2", "A2", "C3"],
+            "voicing": { "voices": 2, "spread_semitones": 7 },
+            "hold_s": [35, 80],
+            "drift_cents": 6
+          }
+        },
+
+        "motif": {
+          "state": "off"
+        },
+
+        "lead": {
+          "state": "auto",
+          "foreground": 0.2,
+          "mix": { "gain_db": -22, "fade_in_s": 18, "fade_out_s": 10, "pan": 0.15 },
+          "gen": {
+            "type": "wander",
+            "density_notes_per_min": [2, 6],
+            "phrase_s": [8, 18],
+            "range_semitones": 9,
+            "step_bias": 0.8,
+            "rests_prob": 0.5
+          }
+        },
+
+        "texture": {
+          "state": "on",
+          "foreground": 0.25,
+          "mix": { "gain_db": -28, "fade_in_s": 20, "fade_out_s": 12 },
+          "gen": {
+            "type": "shimmer",
+            "event_rate_per_min": [1, 4],
+            "dur_s": [6, 24],
+            "register": "high"
+          }
+        },
+
+        "field": {
+          "state": "off"
+        }
+      }
+    },
+
+    {
+      "id": "m2_streets",
+      "label": "Empty Streets",
+      "duration_s": 120,
+      "beat_words": ["memory", "slow_pulse", "unease"],
+      "energy": { "tension": 0.45, "density": 0.45, "brightness": 0.55 },
+
+      "layers": {
+        "drone": {
+          "state": "on",
+          "foreground": 0.55,
+          "mix": { "gain_db": -13 },
+          "gen": {
+            "notes": ["D2", "G2", "C3"],
+            "hold_s": [25, 60],
+            "drift_cents": 8
+          }
+        },
+
+        "motif": {
+          "state": "on",
+          "foreground": 0.6,
+          "mix": { "gain_db": -18, "fade_in_s": 8, "fade_out_s": 10, "pan": -0.2 },
+          "gen": {
+            "type": "motif_loop",
+            "rate_hz": 2.2,
+            "motif_steps": 8,
+            "repeat_cycle": { "length": 4, "variant_on": [4] },
+            "variant_style": "substitution",
+            "degrees": [1, 2, 4, 5],
+            "gate": { "note_len": "1/8", "swing": 0.06 },
+            "velocity": [35, 65]
+          }
+        },
+
+        "lead": {
+          "state": "auto",
+          "foreground": 0.35,
+          "mix": { "gain_db": -20 },
+          "gen": {
+            "density_notes_per_min": [6, 14],
+            "phrase_s": [6, 14],
+            "range_semitones": 12,
+            "step_bias": 0.65,
+            "avoid_degrees": [7],
+            "rests_prob": 0.35
+          }
+        },
+
+        "texture": {
+          "state": "on",
+          "foreground": 0.35,
+          "mix": { "gain_db": -26 },
+          "gen": { "event_rate_per_min": [2, 8], "dur_s": [4, 18] }
+        },
+
+        "field": {
+          "state": "auto",
+          "foreground": 0.15,
+          "mix": { "gain_db": -30, "fade_in_s": 16, "fade_out_s": 18 },
+          "gen": {
+            "type": "field",
+            "clips": ["distant_wind.wav", "loose_metal_creak.wav"],
+            "start_prob": 0.2,
+            "segment_s": [12, 30]
+          }
+        }
+      }
+    },
+
+    {
+      "id": "m3_tower",
+      "label": "Rooftop Lookout",
+      "duration_s": 120,
+      "beat_words": ["reveal", "desolation", "wide_sky"],
+      "energy": { "tension": 0.6, "density": 0.5, "brightness": 0.35 },
+
+      "layers": {
+        "drone": {
+          "state": "on",
+          "foreground": 0.6,
+          "mix": { "gain_db": -12 },
+          "gen": { "notes": ["D2", "Ab2", "C3"], "hold_s": [35, 90] }
+        },
+
+        "motif": {
+          "state": "on",
+          "foreground": 0.35,
+          "mix": { "gain_db": -22 },
+          "gen": { "rate_hz": 1.6, "degrees": [1, 3, 4], "velocity": [28, 55] }
+        },
+
+        "lead": {
+          "state": "on",
+          "foreground": 0.75,
+          "mix": { "gain_db": -16, "fade_in_s": 10, "fade_out_s": 12, "pan": 0.25 },
+          "gen": {
+            "density_notes_per_min": [10, 18],
+            "phrase_s": [5, 12],
+            "range_semitones": 14,
+            "step_bias": 0.55,
+            "tendency": "descending",
+            "rests_prob": 0.25
+          }
+        },
+
+        "texture": {
+          "state": "on",
+          "foreground": 0.45,
+          "mix": { "gain_db": -24 },
+          "gen": { "register": "mid_high", "event_rate_per_min": [3, 10] }
+        },
+
+        "field": {
+          "state": "on",
+          "foreground": 0.4,
+          "mix": { "gain_db": -26 },
+          "gen": { "clips": ["distant_chatter.wav"], "segment_s": [20, 45] }
+        }
+      }
+    },
+
+    {
+      "id": "m4_afterglow",
+      "label": "Afterglow Fade",
+      "duration_s": 90,
+      "beat_words": ["release", "quiet", "cooling_embers"],
+      "energy": { "tension": 0.25, "density": 0.2, "brightness": 0.25 },
+
+      "layers": {
+        "drone": {
+          "state": "on",
+          "foreground": 0.8,
+          "mix": { "gain_db": -11, "fade_out_s": 20 },
+          "gen": { "notes": ["D2", "A2"], "hold_s": [50, 120] }
+        },
+        "motif": { "state": "off" },
+        "lead":  { "state": "auto", "foreground": 0.15, "mix": { "gain_db": -26 }, "gen": { "density_notes_per_min": [1, 4] } },
+        "texture": { "state": "on", "foreground": 0.25, "mix": { "gain_db": -30 }, "gen": { "event_rate_per_min": [1, 3] } },
+        "field": { "state": "auto", "foreground": 0.25, "mix": { "gain_db": -30, "fade_out_s": 20 }, "gen": { "start_prob": 0.35, "segment_s": [10, 25] } }
+      }
+    }
+  ],
+
+  "render_hints": {
+    "foreground_policy": {
+      "max_foreground_layers": 2,
+      "duck_background_db": 6
+    },
+    "midi": {
+      "default_quantize": "1/16",
+      "sustain_cc64": true
+    }
+  }
+}
